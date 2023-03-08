@@ -1,0 +1,11 @@
+server:
+  address: localhost
+  port: 4000
+zuul:
+  routes:
+    weatherapi:
+      path: /api/weatherapi/**
+      url: https://api.weatherapi.com
+  # api.weatherapi.com return back Access-Control-Allow-Origin: *
+  # spring boot CORS also add it, so it cause double header Access-Control-Allow-Origin
+  ignored-headers: Access-Control-Allow-Origin

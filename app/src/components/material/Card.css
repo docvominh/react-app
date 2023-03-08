@@ -1,0 +1,13 @@
+.card-content > .icon {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+}
+
+.card-content > .icon.remove {
+    right: 5px;
+}
+
+.card-content > .icon.edit {
+    right: 35px;
+}
